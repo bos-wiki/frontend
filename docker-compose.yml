@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+    nuxt:
+      container_name: bw-frontend
+      build: .
+      networks:
+        - web
+      labels:
+        # This is enableing treafik to proxy this service
+        - "traefik.enable=true"
+        # Here we have to define the URL
+        - "traefik.http.routers.bw-frontend.rule=Host(`boswiki.localhost`)"
+        # Here we are defining wich entrypoint should be used by clients to access this service
+        - "traefik.http.routers.bw-frontend.entrypoints=web"
+        # Here we define in wich network treafik can find this service
+        - "traefik.docker.network=web"
+        # This is the port that traefik should proxy
+        - "traefik.http.services.bw-frontend.loadbalancer.server.port=3000"
+      ports:
+        - "24678:24678"
+      volumes:
+        - ./:/usr/src/app
+networks:
+  web:
+    external: true
