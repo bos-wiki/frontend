@@ -2,16 +2,24 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "export NODE_TLS_REJECT_UNAUTHORIZED=0 && nuxt dev  --env.NODE_TLS_REJECT_UNAUTHORIZED=0",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.12",
-    "@nuxtjs/tailwindcss": "^6.1.2"
+    "@nuxt/devtools": "^0.8.3",
+    "@nuxtjs/tailwindcss": "^6.1.2",
+    "@tailwindcss/forms": "^0.5.6",
+    "nuxt": "3.7.3",
+    "nuxt-svgo": "^3.5.3"
   },
   "dependencies": {
-    "crypto-js": "^4.1.1"
+    "@pinia/nuxt": "^0.4.11",
+    "crypto-js": "^4.1.1",
+    "pinia": "^2.1.6"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }
