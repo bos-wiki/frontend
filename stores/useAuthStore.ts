@@ -38,7 +38,7 @@ export const useAuthStore = defineStore('auth', () => {
   }
 
   const fetchUser = async () => {
-    const {data, error} = await useApiFetch('/api/user');
+    const {data, error} = await useApiFetch('/user');
     if (error.value) {
       return navigateTo('/login', {replace: true})
     }
