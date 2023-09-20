@@ -26,5 +26,18 @@ export default defineNuxtConfig({
     autoImports: [
       'defineStore', // import { defineStore } from 'pinia'
     ]
-  }
+  },
+  app: {
+    head: {
+      title: 'bos.wiki',
+      script: [
+        {
+          type: 'text/javascript',
+          src: 'https://cdn.usefathom.com/script.js',
+          'data-spa': 'auto',
+          'data-site': 'AAHSAIEE',
+          'defer': true
+        }
+      ]
+    },
 })
