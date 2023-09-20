@@ -3,7 +3,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
-      backendUrl: process.env.BACKEND_URL,
+      apiUrl: process.env.API_URL,
+      // FIXME: some local shenanigans about localhost vs 127.0.0.1
+      tempAuthUrl: process.env.TEMP_AUTH_URL,
+      referrer: process.env.REFERRER,
     }
   },
   routeRules: {

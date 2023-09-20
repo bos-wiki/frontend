@@ -8,9 +8,10 @@ export const useStationStore = defineStore('station', () => {
   const stations = ref<Station[]|null>(null)
   const stationsPaginator = ref(null)
   const route = useRoute()
+  const config = useRuntimeConfig()
 
   const fetchStations = async () => {
-    const {data, error} = await useFetch(`http://127.0.0.1:8000/api/stations?page=${stationsPaginator.current_page ??route.query.page}`, {
+    const {data, error} = await useFetch(`${config.public.apiUrl}/api/stations?page=${stationsPaginator.current_page ??route.query.page}`, {
       watch: route.query.page
     })
     stations.value = data.value.data as Station[];
@@ -18,7 +19,7 @@ export const useStationStore = defineStore('station', () => {
   }
 
   const getStation = async (id: string) => {
-    const {data, error} = await useFetch(`http://127.0.0.1:8000/api/stations/${id}`);
+    const {data, error} = await useFetch(`${config.public.apiUrl}/api/stations/${id}`);
     return data.value as Station;
   }
 
