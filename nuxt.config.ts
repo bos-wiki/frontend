@@ -39,5 +39,6 @@ export default defineNuxtConfig({
           'defer': true
         }
       ]
-    },
+    }
+  }
 })
