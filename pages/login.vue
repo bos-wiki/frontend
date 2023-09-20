@@ -23,17 +23,17 @@ const login = async () => {
 </script>
 
 <template>
-  <ContentWrapper>
-    <form @submit.prevent="login" class="flex flex-col space-y-4">
+  <ContentWrapper class="mt-12 flex justify-center">
+    <form @submit.prevent="login" class="flex flex-col space-y-4 w-full md:w-1/2">
       <div>
-        <label class="block">Email</label>
+        <label class="block">E-Mail</label>
         <input class="w-full border border-gray-300 " type="text" v-model="form.email">
       </div>
       <div>
-        <label class="block">Password</label>
+        <label class="block">Passwort</label>
         <input class="w-full border border-gray-300 " type="password" v-model="form.password">
       </div>
-      <button class="bg-black text-white p-4" type="submit">Login</button>
+      <button class="bg-black text-white p-4" type="submit">Anmelden</button>
     </form>
   </ContentWrapper>
 </template>
