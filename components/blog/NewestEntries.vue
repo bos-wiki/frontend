@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="bg-white py-24 sm:py-32">
+  <ContentWrapper class="py-24 sm:py-32">
     <div class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12sm:gap-y-16 lg:grid-cols-2">
       <article class="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg mb-16">
         <time datetime="2020-03-16" class="block text-sm leading-6 text-gray-600">20. Oktober, 2022</time>
@@ -10,7 +10,8 @@
           Willkommen bei bos.wiki: Die Plattform für Feuerwehr, Rettungsdienst und mehr
         </h2>
         <p class="mt-4 text-lg leading-8 text-gray-600">
-          Dieses Projekt ist eine innovative Plattform, die darauf abzielt, Wissen und Informationen auf eine zugängliche
+          Dieses Projekt ist eine innovative Plattform, die darauf abzielt, Wissen und Informationen auf eine
+          zugängliche
           und benutzerfreundliche Weise zu teilen. Ich freue mich auf die Reise, die vor uns liegt, und laden Euch ein,
           Teil dieser spannenden Reise zu sein.
         </p>
@@ -42,7 +43,10 @@
                 </a>
               </h2>
               <p class="mt-4 text-sm leading-6 text-gray-600">
-                Der Grundstein für die neue Plattform ist gelegt. Ich habe die Datenbank erfolgreich in Code gegossen, was einen bedeutenden Meilenstein in dem Projekt darstellt. Darüber hinaus hat der Prozess der Nutzerauthentifizierung begonnen. Dies ist ein entscheidender Schritt, um sicherzustellen, dass unsere Nutzer sicher und effizient auf unsere Plattform zugreifen können.
+                Der Grundstein für die neue Plattform ist gelegt. Ich habe die Datenbank erfolgreich in Code gegossen,
+                was einen bedeutenden Meilenstein in dem Projekt darstellt. Darüber hinaus hat der Prozess der
+                Nutzerauthentifizierung begonnen. Dies ist ein entscheidender Schritt, um sicherzustellen, dass unsere
+                Nutzer sicher und effizient auf unsere Plattform zugreifen können.
               </p>
             </div>
             <div class="mt-4 flex">
@@ -65,7 +69,10 @@
                 </a>
               </h2>
               <p class="mt-4 text-sm leading-6 text-gray-600">
-                In den letzten Wochen habe Ich intensiv an der Datenbankarchitektur gearbeitet und umfangreiche Nutzerforschung durchgeführt. Das Ziel war es, eine solide Grundlage für die Plattform zu schaffen und gleichzeitig sicherzustellen, dass wir Eure Bedürfnisse verstehen und erfüllen. Ich freue mich, die Ergebnisse dieser Arbeit in den kommenden Updates zu teilen.
+                In den letzten Wochen habe Ich intensiv an der Datenbankarchitektur gearbeitet und umfangreiche
+                Nutzerforschung durchgeführt. Das Ziel war es, eine solide Grundlage für die Plattform zu schaffen und
+                gleichzeitig sicherzustellen, dass wir Eure Bedürfnisse verstehen und erfüllen. Ich freue mich, die
+                Ergebnisse dieser Arbeit in den kommenden Updates zu teilen.
               </p>
             </div>
             <div class="mt-4 flex">
@@ -80,6 +87,7 @@
 
           <!-- More posts... -->
         </div>
+      </div>
     </div>
-  </div>
-</div></template>
+  </ContentWrapper>
+</template>
