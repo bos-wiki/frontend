@@ -1,6 +1,5 @@
 <script setup>
 import {useStationStore} from "~/stores/useStationStore";
-import Information from "~/assets/information.svg";
 
 const store = useStationStore()
 const route = useRoute()
