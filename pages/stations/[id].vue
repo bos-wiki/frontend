@@ -23,10 +23,12 @@ const getAddressString = (address) => {
       <label for="tabs" class="sr-only">Select a tab</label>
       <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
       <select id="tabs" name="tabs" class="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500">
-        <option>My Account</option>
-        <option>Company</option>
-        <option selected>Team Members</option>
-        <option>Billing</option>
+        <option>Info</option>
+        <option>Fahrzeuge</option>
+        <option>Bilder</option>
+        <option>Diskussionen</option>
+        <option>Mitglieder</option>
+        <option>Verlauf</option>
       </select>
     </div>
     <div class="hidden sm:block">
@@ -68,7 +70,11 @@ const getAddressString = (address) => {
       </div>
     </div>
   </div>
-  <ContentWrapper class="py-12">
+  <ContentWrapper class="md:py-12 py-6">
+    <header class="md:hidden mb-6">
+      <h1 class="text-2xl font-bold tracking-wide">{{ station.data.name}}</h1>
+      <span class="text-sm text-gray-400">{{ getAddressString(station.data.address) }}</span>
+    </header>
     <pre>{{station}}</pre>
   </ContentWrapper>
 </template>

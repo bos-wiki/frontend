@@ -18,16 +18,16 @@ const links = [
 </script>
 
 <template>
-  <nav class="flex justify-between space-x-12 p-8 border-b border-gray-200">
+  <nav class="block md:flex justify-between md:space-x-12 p-8 border-b border-gray-200">
     <div><IconsBroadcast class="inline mr-2 -mt-1" />bos.wiki</div>
-    <div class="space-x-4">
+    <div class="md:space-x-4">
       <template v-for="link in links">
         <NuxtLink
           :class="{
             'cursor-not-allowed text-gray-400 line-through pointer-events-none': link.disabled,
             'text-black hover:text-white hover:bg-red-600': !link.disabled
           }"
-          class="px-3 py-2"
+          class="md:px-3 py-2 block md:inline"
           :to="link.path"
           :disabled="link.disabled"
         >
