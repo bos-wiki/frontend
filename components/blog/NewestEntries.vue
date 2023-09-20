@@ -42,7 +42,7 @@
                 </a>
               </h2>
               <p class="mt-4 text-sm leading-6 text-gray-600">
-                Der Grundstein für die neue Plattform ist gelegt. Ich habe die Datenbank erfolgreich in Code gegossen, was einen bedeutenden Meilenstein in unserem Projekt darstellt. Darüber hinaus hat der Prozess der Nutzerauthentifizierung begonnen. Dies ist ein entscheidender Schritt, um sicherzustellen, dass unsere Nutzer sicher und effizient auf unsere Plattform zugreifen können.
+                Der Grundstein für die neue Plattform ist gelegt. Ich habe die Datenbank erfolgreich in Code gegossen, was einen bedeutenden Meilenstein in dem Projekt darstellt. Darüber hinaus hat der Prozess der Nutzerauthentifizierung begonnen. Dies ist ein entscheidender Schritt, um sicherzustellen, dass unsere Nutzer sicher und effizient auf unsere Plattform zugreifen können.
               </p>
             </div>
             <div class="mt-4 flex">
@@ -65,7 +65,7 @@
                 </a>
               </h2>
               <p class="mt-4 text-sm leading-6 text-gray-600">
-                In den letzten Wochen haben wir intensiv an der Datenbankarchitektur gearbeitet und umfangreiche Nutzerforschung durchgeführt. Das Ziel war es, eine solide Grundlage für die Plattform zu schaffen und gleichzeitig sicherzustellen, dass wir Eure Bedürfnisse verstehen und erfüllen. Ich freue mich, die Ergebnisse dieser Arbeit in den kommenden Updates zu teilen.
+                In den letzten Wochen habe Ich intensiv an der Datenbankarchitektur gearbeitet und umfangreiche Nutzerforschung durchgeführt. Das Ziel war es, eine solide Grundlage für die Plattform zu schaffen und gleichzeitig sicherzustellen, dass wir Eure Bedürfnisse verstehen und erfüllen. Ich freue mich, die Ergebnisse dieser Arbeit in den kommenden Updates zu teilen.
               </p>
             </div>
             <div class="mt-4 flex">
