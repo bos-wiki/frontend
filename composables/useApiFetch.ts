@@ -25,7 +25,7 @@ export const useApiFetch = <T>(path: string, options: UseFetchOptions<T> = {}) =
   console.log(config.public.tempAuthUrl ?? config.public.apiUrl,
     config.public.tempAuthUrl, config.public.apiUrl)
 
-  return useFetch(`${config.public.tempAuthUrl ?? config.public.apiUrl}${path}`, {
+  return useFetch(`${config.public.apiUrl}${path}`, {
     credentials: "include",
     watch: false,
     ...options,
