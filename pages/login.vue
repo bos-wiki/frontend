@@ -45,7 +45,7 @@ const login = async () => {
       </div>
     </div>
 
-    <div class="mt-12 md:w-1/2 flex justify-center text-red-900 bg-red-50 border border-red-900 p-8 rounded-lg">
+    <div class="mt-12 md:w-1/2 flex justify-center text-red-900 bg-red-50 border border-red-900 p-8">
       <IconsAlertFilled class="inline-flex text-red-500 h-7 w-7 mr-4"/> Aktuell kann man noch keine Accounts erstellen!
     </div>
   </ContentWrapper>
