@@ -136,7 +136,7 @@ const links = [
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" v-if="navigationOpen" id="mobile-menu">
+    <div class="md:hidden" v-if="navigationOpen" id="mobile-menu">
       <div class="space-y-1 pb-3 pt-2">
         <template v-for="link in links">
           <NuxtLink
