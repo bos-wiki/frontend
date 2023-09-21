@@ -14,8 +14,8 @@ export const useStationStore = defineStore('station', () => {
     const {data, error} = await useFetch(`${config.public.apiUrl}/stations?page=${stationsPaginator.current_page ??route.query.page}`, {
       watch: route.query.page
     })
-    stations.value = data.value.data as Station[];
-    stationsPaginator.value = data.value.meta;
+    stations.value = data?.value?.data as Station[];
+    stationsPaginator.value = data?.value?.meta;
   }
 
   const getStation = async (id: string) => {
