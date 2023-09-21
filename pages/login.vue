@@ -23,7 +23,7 @@ const login = async () => {
 </script>
 
 <template>
-  <ContentWrapper class="mt-12 flex justify-center">
+  <ContentWrapper class="mt-12 flex flex-col items-center justify-center">
     <form @submit.prevent="login" class="flex flex-col space-y-4 w-full md:w-1/2">
       <div>
         <label class="block">E-Mail</label>
@@ -33,7 +33,20 @@ const login = async () => {
         <label class="block">Passwort</label>
         <input class="w-full border border-gray-300 " type="password" v-model="form.password">
       </div>
-      <button class="bg-black text-white p-4" type="submit">Anmelden</button>
+      <button class="bg-black text-white p-4 hover:text-white hover:bg-red-500" type="submit">Anmelden</button>
     </form>
+
+    <div class="relative md:w-1/2 mt-12">
+      <div class="absolute inset-0 flex items-center" aria-hidden="true">
+        <div class="w-full border-t border-gray-200"></div>
+      </div>
+      <div class="relative flex justify-center text-sm font-medium leading-6">
+        <span class="bg-white px-6 text-gray-900">Noch keinen Account?</span>
+      </div>
+    </div>
+
+    <div class="mt-12 md:w-1/2 flex justify-center text-red-900 bg-red-50 border border-red-900 p-8 rounded-lg">
+      <IconsAlertFilled class="inline-flex text-red-500 h-7 w-7 mr-4"/> Aktuell kann man noch keine Accounts erstellen!
+    </div>
   </ContentWrapper>
 </template>
