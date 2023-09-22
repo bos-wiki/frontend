@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-full h-screen">
+  <div class="flex min-h-full">
     <div class="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-12 xl:px-18">
       <NuxtLink to="/" class="hover:text-red-500 hover:cursor-pointer mb-12">
         <header class="flex flex-col justify-center items-center space-y-4">
