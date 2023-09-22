@@ -13,7 +13,7 @@ watch(() => route.query.page, () => {
 <template>
   <ContentWrapper>
     <List v-if="store?.stations" :stations="store.stations"/>
-    <template v-if="!store?.stations">
+    <template v-if="!store?.stations || !store?.stations.length">
       <div class="text-center py-56">
         <IconsTruck class="mx-auto h-12 w-12 text-red-500"/>
         <h3 class="mt-2 text-2xl font-semibold text-gray-900">Kein Ergebnis</h3>

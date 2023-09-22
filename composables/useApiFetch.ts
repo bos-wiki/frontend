@@ -16,16 +16,13 @@ export const useApiFetch = <T>(path: string, options: UseFetchOptions<T> = {}) =
     headers = {
       ...headers,
       ...useRequestHeaders(["cookie"]),
-      // TODO: use env values instead!
       referer: config.public.referrer,
+      origin: config.public.referrer,
       'Accept': "application/json",
     }
   }
 
-  console.log(config.public.tempAuthUrl ?? config.public.apiUrl,
-    config.public.tempAuthUrl, config.public.apiUrl)
-
-  return useFetch(`${config.public.apiUrl}${path}`, {
+  const requestConfig = {
     credentials: "include",
     watch: false,
     ...options,
@@ -33,5 +30,7 @@ export const useApiFetch = <T>(path: string, options: UseFetchOptions<T> = {}) =
       ...headers,
       ...options.headers,
     },
-  });
+  };
+
+  return useFetch(`${config.public.tempAuthUrl}${path}`, requestConfig);
 };

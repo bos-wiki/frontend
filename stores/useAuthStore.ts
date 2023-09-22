@@ -3,7 +3,9 @@ import {useApiFetch} from "~/composables/useApiFetch";
 
 type User = {
   id: string;
-  name: string;
+  firstName: string;
+  lastName: string;
+  username: string;
   email: string;
 }
 
@@ -13,8 +15,10 @@ type Credentials = {
 }
 
 type RegistrationInfo = {
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
+  username: string;
   password: string;
   password_confirmation: string;
 }
@@ -27,14 +31,16 @@ export const useAuthStore = defineStore('auth', () => {
   const register = async (info: RegistrationInfo) => {
     await useApiFetch("/sanctum/csrf-cookie");
 
-    const register = await useApiFetch("/register", {
+    const {data, error} = await useApiFetch("/register", {
       method: "POST",
       body: info,
     });
 
-    await fetchUser();
+    if (!error.value) {
+      await fetchUser();
+    }
 
-    return register;
+    return {data, error};
   }
 
   const fetchUser = async () => {
@@ -62,7 +68,7 @@ export const useAuthStore = defineStore('auth', () => {
     await useApiFetch('/sanctum/csrf-cookie');
     await useApiFetch('/logout', { method: 'POST'});
     user.value = null;
-    return navigateTo('/login', {replace: true})
+    return navigateTo('/', {replace: true})
   }
 
   return {

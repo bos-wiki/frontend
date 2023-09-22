@@ -19,11 +19,11 @@ const store = useAuthStore()
         <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
             <div class="flex">
-              <img class="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32" :src="`https://ui-avatars.com/api/?rounded=true&size=512&name=${ store.user.name }`" alt="">
+              <img class="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32" :src="`https://ui-avatars.com/api/?rounded=true&size=512&name=${ store.user.first_name }+${ store.user.last_name }`" alt="">
             </div>
             <div class="mt-6 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
               <div class="mt-6 min-w-0 flex-1 sm:hidden 2xl:block">
-                <h1 class="truncate text-2xl font-bold text-gray-900">{{ store.user.name }} <span class="text-xs text-gray-400 font-normal">( @{{ store.user.username }} )</span></h1>
+                <h1 class="truncate text-2xl font-bold text-gray-900">{{ store.user.first_name }} {{ store.user.last_name}} <span class="text-xs text-gray-400 font-normal">( @{{ store.user.username }} )</span></h1>
 
               </div>
               <div class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -38,7 +38,7 @@ const store = useAuthStore()
             </div>
           </div>
           <div class="mt-6 hidden min-w-0 flex-1 sm:block 2xl:hidden">
-            <h1 class="truncate text-2xl font-bold text-gray-900">{{ store.user.name }} <span class="text-xs text-gray-400 font-normal">( @{{ store.user.username }} )</span></h1>
+            <h1 class="truncate text-2xl font-bold text-gray-900">{{ store.user.first_name }} {{ store.user.last_name}} <span class="text-xs text-gray-400 font-normal">( @{{ store.user.username }} )</span></h1>
           </div>
         </div>
       </div>

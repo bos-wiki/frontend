@@ -11,9 +11,10 @@ const navigationOpen = ref(false);
 const links = [
   {name: 'Start', path: '/', disabled: false},
   {name: 'Wachen', path: `/stations?page=1`, disabled: false},
-  {name: 'Fahrzeuge', path: '/vehicles', disabled: true},
-  {name: 'Community', path: '/community', disabled: true},
-  {name: 'Blog', path: '/blog', disabled: true}
+  {name: 'Community', path: `/discord`, disabled: false, external: true},
+  // {name: 'Fahrzeuge', path: '/vehicles', disabled: true},
+  // {name: 'Community', path: '/community', disabled: true},
+  // {name: 'Blog', path: '/blog', disabled: true}
 ]
 </script>
 
@@ -29,23 +30,48 @@ const links = [
       <div class="hidden lg:flex justify-center">
         <template v-for="link in links">
           <NuxtLink
+            v-if="!link?.external"
             active-class="bg-red-500 text-white"
             :class="{
-                'cursor-not-allowed text-gray-300 line-through pointer-events-none': link.disabled,
-                'hover:text-white hover:bg-red-500': !link.disabled
-              }"
+              'cursor-not-allowed text-gray-300 line-through pointer-events-none': link.disabled,
+              'hover:text-white hover:bg-red-500': !link.disabled
+            }"
             class="flex items-center text-md font-light tracking-wider text-gray-900 md:px-4 lg:px-8 py-0"
             :to="link.path"
             :disabled="link.disabled"
           >
             {{ link.name }}
           </NuxtLink>
+          <a
+            v-if="link?.external"
+            :class="{
+              'cursor-not-allowed text-gray-300 line-through pointer-events-none': link.disabled,
+              'hover:text-white hover:bg-red-500': !link.disabled
+            }"
+            class="flex items-center text-md font-light tracking-wider text-gray-900 md:px-4 lg:px-8 py-0"
+            :href="link.path"
+            :disabled="link.disabled"
+          >
+            {{ link.name }}
+          </a>
         </template>
       </div>
       <div class="hidden lg:flex md:w-1/4 md:items-center md:justify-end">
-        <NuxtLink active-class="bg-red-500 text-white"
-                  class="flex items-center text-md font-light tracking-wider text-gray-900 md:px-4 lg:px-8 h-full hover:text-white hover:bg-red-500"
-                  v-if="!userStore.isLoggedIn" to="/login">Login
+        <NuxtLink
+          active-class="bg-red-500 text-white"
+          class="flex items-center text-md font-light tracking-wider text-gray-900 md:px-4 lg:px-8 h-full hover:text-white hover:bg-red-500"
+          v-if="!userStore.isLoggedIn" to="/login"
+        >
+          Login
+        </NuxtLink>
+        <NuxtLink
+          @click="navigationOpen = false"
+          active-class="bg-red-500 text-white"
+          class="flex items-center text-md font-light tracking-wider text-gray-900 md:px-4 lg:px-8 h-full hover:text-white hover:bg-red-500"
+          v-if="!userStore.isLoggedIn"
+          to="/register"
+        >
+          Registrieren
         </NuxtLink>
         <!--        <button type="button"-->
         <!--                class="relative rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">-->
@@ -97,9 +123,9 @@ const links = [
             <a href="#" class="line-through pointer-events-none block px-4 py-2 text-sm text-gray-700" role="menuitem">
               Einstellugen
             </a>
-            <a href="#" class="line-through pointer-events-none block px-4 py-2 text-sm text-gray-700" role="menuitem">
+            <button @click="userStore.logout()" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">
               Abmelden
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -140,6 +166,7 @@ const links = [
       <div class="space-y-1 pb-3 pt-2">
         <template v-for="link in links">
           <NuxtLink
+            v-if="!link.external"
             @click="navigationOpen = false"
             active-class="border-red-500 bg-red-50"
             :class="{
@@ -152,58 +179,91 @@ const links = [
           >
             {{ link.name }}
           </NuxtLink>
+          <a
+            v-if="link.external"
+            :class="{
+                'cursor-not-allowed text-gray-300 line-through pointer-events-none': link.disabled,
+                'hover:text-white hover:bg-red-500': !link.disabled
+              }"
+            class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-thin text-red-700"
+            :href="link.path"
+            :disabled="link.disabled"
+          >
+            {{ link.name }}
+          </a>
         </template>
       </div>
+      <div v-if="!userStore.isLoggedIn" class="border-t border-gray-200 pb-3 pt-4 space-y-1">
+        <NuxtLink
+          @click="navigationOpen = false"
+          active-class="bg-red-500 text-white"
+          class="hover:text-white hover:bg-red-500 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-thin text-red-700"
+          v-if="!userStore.isLoggedIn"
+          to="/login"
+        >
+          Login
+        </NuxtLink>
+        <NuxtLink
+          @click="navigationOpen = false"
+          active-class="bg-red-500 text-white"
+          class="hover:text-white hover:bg-red-500 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-thin text-red-700"
+          v-if="!userStore.isLoggedIn"
+          to="/register"
+        >
+          Registrieren
+        </NuxtLink>
+      </div>
+
       <div v-if="userStore.isLoggedIn" class="border-t border-gray-200 pb-3 pt-4">
         <div class="flex items-center px-4">
           <div class="flex-shrink-0">
             <img
               class="h-10 w-10 rounded-full"
-              :src="`https://ui-avatars.com/api/?rounded=true&size=512&name=${ userStore.user.name }`"
+              :src="`https://ui-avatars.com/api/?rounded=true&size=512&name=${ userStore.user.first_name }+${ userStore.user.last_name}`"
               alt=""
             >
           </div>
           <div class="ml-3">
-            <div class="text-base font-medium text-gray-800">Tom Cook</div>
-            <div class="text-sm font-medium text-gray-500">tom@example.com</div>
+            <div class="text-base font-medium text-gray-800">{{ userStore.user.first_name }} {{ userStore.user.last_name }}</div>
+            <div class="text-sm font-medium text-gray-500">{{ userStore.user.email }}</div>
           </div>
-          <button
-            type="button"
-            class="relative ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
-          >
-            <span class="absolute -inset-1.5"></span>
-            <span class="sr-only">View notifications</span>
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-              />
-            </svg>
-          </button>
+<!--          <button-->
+<!--            type="button"-->
+<!--            class="relative ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"-->
+<!--          >-->
+<!--            <span class="absolute -inset-1.5"></span>-->
+<!--            <span class="sr-only">View notifications</span>-->
+<!--            <svg-->
+<!--              class="h-6 w-6"-->
+<!--              fill="none"-->
+<!--              viewBox="0 0 24 24"-->
+<!--              stroke-width="1.5"-->
+<!--              stroke="currentColor"-->
+<!--              aria-hidden="true"-->
+<!--            >-->
+<!--              <path-->
+<!--                stroke-linecap="round"-->
+<!--                stroke-linejoin="round"-->
+<!--                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"-->
+<!--              />-->
+<!--            </svg>-->
+<!--          </button>-->
         </div>
         <div class="mt-3 space-y-1">
           <NuxtLink
+            @click="navigationOpen = false"
             to="/profile"
-            class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
+            class="block px-4 py-2 text-base font-thin text-gray-500 hover:bg-gray-100 hover:text-gray-800"
           >
             Dein Profil
           </NuxtLink>
-          <a href="#"
-             class="line-through pointer-events-none block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800">
-            Einstellungen
-          </a>
-          <a href="#"
-             class="line-through pointer-events-none block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800">
+<!--          <a href="#"-->
+<!--             class="line-through pointer-events-none block px-4 py-2 text-base font-thin text-gray-500 hover:bg-gray-100 hover:text-gray-800">-->
+<!--            Einstellungen-->
+<!--          </a>-->
+          <button @click="userStore.logout()" class="block px-4 py-2 text-base font-thin text-gray-500 hover:bg-gray-100 hover:text-gray-800" role="menuitem">
             Abmelden
-          </a>
+          </button>
         </div>
       </div>
     </div>
