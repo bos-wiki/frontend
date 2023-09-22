@@ -32,5 +32,5 @@ export const useApiFetch = <T>(path: string, options: UseFetchOptions<T> = {}) =
     },
   };
 
-  return useFetch(`${config.public.tempAuthUrl}${path}`, requestConfig);
+  return useFetch(`${config.public.apiUrl}${path}`, requestConfig);
 };
