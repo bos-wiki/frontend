@@ -16,7 +16,7 @@ const getAddressString = (address) => {
 
 <template>
   <header>
-    <Placeholder text="Titelbild bald verfügbar!" class="overflow-hidden h-64 w-full object-cover object-center"/>
+    <Placeholder text="Titelbild bald verfügbar!" class="overflow-hidden w-full object-cover object-center max-h-64"/>
   </header>
   <div>
     <div class="sm:hidden">

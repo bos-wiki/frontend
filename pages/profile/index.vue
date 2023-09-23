@@ -14,7 +14,7 @@ const store = useAuthStore()
       <!-- Profile header -->
       <div>
         <div>
-          <Placeholder text="Titelbild bald verfügbar!" class="overflow-hidden h-48 w-full object-cover lg:h-48"/>
+          <Placeholder text="Titelbild bald verfügbar!" class="overflow-hidden max-h-48 w-full object-cover lg:h-48"/>
         </div>
         <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">

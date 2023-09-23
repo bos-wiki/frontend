@@ -5,7 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="w-full flex justify-center items-center h-full">
+  <div class="w-full flex justify-center items-center">
     <svg
       viewBox="0 0 1000 500"
       preserveAspectRatio="xMidYMid meet"
