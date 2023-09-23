@@ -88,6 +88,7 @@ const links = [
         <div v-if="userStore.isLoggedIn" class="relative ml-3">
           <div>
             <button
+              @click="navigationOpen = !navigationOpen"
               type="button"
               class="relative flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
               aria-expanded="false"
@@ -110,10 +111,11 @@ const links = [
               To: "transform opacity-0 scale-95"
           -->
           <div
+            v-if="navigationOpen"
             class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
             role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
             <!-- Active: "bg-gray-100", Not Active: "" -->
-            <NuxtLink to="/profile" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">
+            <NuxtLink @click="navigationOpen = false" to="/profile" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">
               Dein Profil
             </NuxtLink>
             <a href="#" class="line-through pointer-events-none block px-4 py-2 text-sm text-gray-700" role="menuitem">
@@ -158,7 +160,7 @@ const links = [
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="md:hidden" v-if="navigationOpen" id="mobile-menu">
+    <div class="lg:hidden" v-if="navigationOpen" id="mobile-menu">
       <div class="space-y-1 pb-3 pt-2">
         <template v-for="link in links">
           <NuxtLink
