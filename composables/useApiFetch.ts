@@ -32,5 +32,7 @@ export const useApiFetch = <T>(path: string, options: UseFetchOptions<T> = {}) =
     },
   };
 
-  return useFetch(`${config.public.apiUrl}${path}`, requestConfig);
+  return useFetch(`${
+    config.public.environment === 'development' ? config.public.tempAuthUrl : config.public.apiUrl 
+  }${path}`, requestConfig);
 };

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
+      environment: process.env.ENVIRONMENT,
       apiUrl: process.env.API_URL,
       // FIXME: some local shenanigans about localhost vs 127.0.0.1
       tempAuthUrl: process.env.TEMP_AUTH_URL,

@@ -95,11 +95,7 @@ const links = [
             >
               <span class="absolute -inset-1.5"></span>
               <span class="sr-only">Open user menu</span>
-              <img
-                class="h-8 w-8 rounded-full"
-                :src="`https://ui-avatars.com/api/?rounded=true&size=512&name=${ userStore.user.name }`"
-                alt=""
-              >
+              <ProfileAvatar class="h-8 w-8 rounded-full" :first-name="userStore.user.first_name" :last-name="userStore.user.last_name"/>
             </button>
           </div>
 
@@ -217,11 +213,11 @@ const links = [
       <div v-if="userStore.isLoggedIn" class="border-t border-gray-200 pb-3 pt-4">
         <div class="flex items-center px-4">
           <div class="flex-shrink-0">
-            <img
+            <ProfileAvatar
               class="h-10 w-10 rounded-full"
-              :src="`https://ui-avatars.com/api/?rounded=true&size=512&name=${ userStore.user.first_name }+${ userStore.user.last_name}`"
-              alt=""
-            >
+              :first-name="userStore.user.first_name"
+              :last-name="userStore.user.last_name"
+            />
           </div>
           <div class="ml-3">
             <div class="text-base font-medium text-gray-800">{{ userStore.user.first_name }} {{ userStore.user.last_name }}</div>
