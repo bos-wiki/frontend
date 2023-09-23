@@ -14,7 +14,7 @@ const store = useAuthStore()
       <!-- Profile header -->
       <div>
         <div>
-          <img class="h-48 w-full object-cover lg:h-48" src="https://placehold.co/1200x400/eee/ccc?text=Titelbild+bald+verf%C3%BCgbar" alt="">
+          <Placeholder text="Titelbild bald verfügbar!" class="overflow-hidden h-48 w-full object-cover lg:h-48"/>
         </div>
         <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">

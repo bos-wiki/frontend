@@ -16,7 +16,7 @@ const getAddressString = (address) => {
 
 <template>
   <header>
-    <img class="w-full object-cover object-center" src="https://placehold.co/1200x400/eee/ccc?text=Titelbild+bald+verf%C3%BCgbar" alt="">
+    <Placeholder text="Titelbild bald verfügbar!" class="overflow-hidden h-96 w-full object-cover object-center"/>
   </header>
   <div>
     <div class="sm:hidden">

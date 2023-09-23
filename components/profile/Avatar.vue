@@ -5,7 +5,7 @@ const props = withDefaults(
   defineProps<{
     firstName: string;
     lastName: string;
-    backgroundColor: string;
+    backgroundColor?: string;
   }>(),
   {
     backgroundColor: '#ddd'
