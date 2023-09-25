@@ -5,6 +5,30 @@ const props = defineProps({
     required: true
   }
 })
+
+const StatusMap = {
+  draft: {
+    label: 'Entwurf',
+    color: 'bg-indigo-50 ring-indigo-700/10 text-indigo-700'
+  },
+  proposed: {
+    label: 'Vorgeschlagen',
+    color: 'bg-yellow-50 ring-yellow-700/10 text-yellow-700'
+  },
+  verified: {
+    label: 'Verifiziert',
+    color: 'bg-green-50 ring-green-700/10 text-green-700'
+  },
+  pending: {
+    label: 'Ausstehend',
+    color: 'bg-blue-50 ring-blue-700/10 text-blue-700'
+  },
+  archived: {
+    label: 'Archiviert',
+    color: 'bg-red-50 ring-red-700/10 text-red-700'
+  },
+}
+
 </script>
 
 <template>
@@ -27,7 +51,14 @@ const props = defineProps({
         </div>
         <div class="flex shrink-0 items-center gap-x-4">
           <div class="hidden sm:flex sm:flex-col sm:items-end">
-            <p class="text-sm leading-6 text-gray-900">{{ station.stationType.name }}</p>
+            <p class="text-sm leading-6 text-gray-900">
+              <span
+                class="inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset"
+                :class="StatusMap[station.status].color"
+              >
+                {{ StatusMap[station.status].label }}
+              </span>
+            </p>
             <p class="mt-1 text-xs leading-5 text-gray-500"><time :datetime="station.createdAt">{{  station.createdAt }}</time> erstellt</p>
           </div>
           <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
