@@ -31,7 +31,7 @@ const login = async () => {
         <input
           v-model="form.email"
           class="w-full border border-gray-300 focus:border-red-500 focus:ring-red-500"
-          type="text"
+          type="email"
         >
       </div>
       <div>
