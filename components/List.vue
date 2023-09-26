@@ -27,6 +27,10 @@ const StatusMap = {
     label: 'Archiviert',
     color: 'bg-red-50 ring-red-700/10 text-red-700'
   },
+  system_import: {
+    label: 'Auto Import',
+    color: 'bg-red-50 ring-red-700/10 text-red-700'
+  },
 }
 
 </script>
