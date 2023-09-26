@@ -22,7 +22,7 @@ const links = [
   <nav class="sticky top-0 bg-white p-6 border-b border-gray-200 z-50">
     <div class="flex h-12 justify-between">
       <div class="md:w-1/4 flex items-center justify-start">
-        <NuxtLink class="hover:text-red-500 hover:cursor-pointer">
+        <NuxtLink to="/" class="hover:text-red-500 hover:cursor-pointer">
           <IconsBroadcast class="inline mr-2 -mt-1"/>
           bos.wiki
         </NuxtLink>
