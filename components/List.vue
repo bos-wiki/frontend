@@ -54,9 +54,9 @@ const StatusMap = {
             <p class="text-sm leading-6 text-gray-900">
               <span
                 class="inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset"
-                :class="StatusMap[station.status].color"
+                :class="StatusMap[station?.status]?.color"
               >
-                {{ StatusMap[station.status].label }}
+                {{ StatusMap[station?.status]?.label }}
               </span>
             </p>
             <p class="mt-1 text-xs leading-5 text-gray-500"><time :datetime="station.createdAt">{{  station.createdAt }}</time> erstellt</p>
