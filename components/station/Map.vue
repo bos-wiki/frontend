@@ -18,7 +18,7 @@ const { mapContainer, lat, lng } = useMap({
 </script>
 
 <template>
-  <div class="w-full relative h-[30vh]">
+  <div class="relative h-[30vh]">
     <div class="map" ref="mapContainer"></div>
   </div>
 </template>
