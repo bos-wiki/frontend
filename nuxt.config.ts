@@ -1,14 +1,14 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', 'maplibre-gl/dist/maplibre-gl.css'],
   runtimeConfig: {
     public: {
       environment: process.env.ENVIRONMENT,
       apiUrl: process.env.API_URL,
-      // FIXME: some local shenanigans about localhost vs 127.0.0.1
       tempAuthUrl: process.env.TEMP_AUTH_URL,
       referrer: process.env.REFERRER,
+      mapUrl: process.env.MAP_URL,
     }
   },
   routeRules: {
