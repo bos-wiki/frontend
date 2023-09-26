@@ -1,17 +1,33 @@
 <script setup>
 import {useStationStore} from "~/stores/useStationStore";
+import {EditorContent, useEditor} from "@tiptap/vue-3";
+import Document from '@tiptap/extension-document'
+import Paragraph from '@tiptap/extension-paragraph'
+import Text from '@tiptap/extension-text'
+import useStatus from "~/composables/useStatus";
 
 const store = useStationStore()
 const route = useRoute()
+const config = useRuntimeConfig()
+const { StatusMap } = useStatus()
 
 const station = await store.getStation(route.params.id)
 
 const getAddressString = (address) => {
-  console.log(address)
   return address
     ? `${address?.street} ${address?.number}, ${address?.zip} ${address?.city}`
     : 'Noch keine Adresse hinterlegt!'
 }
+
+const editor = useEditor({
+  extensions: [
+    Document,
+    Paragraph,
+    Text,
+  ],
+  editable: false,
+  content: station.data.description,
+})
 </script>
 
 <template>
@@ -35,9 +51,19 @@ const getAddressString = (address) => {
     <div class="hidden sm:block">
       <div class="border-b border-gray-200">
         <ContentWrapper>
-          <header class="mt-10 mb-6">
-            <h1 class="text-4xl font-bold tracking-wide">{{ station.data.name }}</h1>
-            <span class="text-gray-400">{{ getAddressString(station.data.address) }}</span>
+          <header class="mt-10 mb-6 flex justify-between items-center">
+            <div>
+              <h1 class="text-4xl font-bold tracking-wide">{{ station.data.name }}</h1>
+              <span class="text-gray-400">{{ getAddressString(station.data.address) }}</span>
+            </div>
+            <p class="text-sm leading-6 text-gray-900">
+              <span
+                class="inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset"
+                :class="StatusMap[station?.data.status]?.color"
+              >
+                {{ StatusMap[station?.data.status]?.label }}
+              </span>
+            </p>
           </header>
           <nav class="-mb-px flex space-x-8" aria-label="Tabs">
             <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
@@ -83,8 +109,8 @@ const getAddressString = (address) => {
       <h1 class="text-2xl font-bold tracking-wide">{{ station.data.name }}</h1>
       <span class="text-sm text-gray-400">{{ getAddressString(station.data.address) }}</span>
     </header>
-    <div class="flex justify-between">
-      <div class="w-2/3 grid grid-cols-2 grid-gap-8">
+    <div class="md:flex justify-between">
+      <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 grid-gap-8">
         <dl class="space-y-4">
           <dd>
             <p class="text-xs">Wachen Art</p>
@@ -114,8 +140,10 @@ const getAddressString = (address) => {
           </dd>
         </dl>
       </div>
-      <StationMap class="w-1/3" :interactive="true" :lat="station.data.latitude" :lng="station.data.longitude"/>
+      <StationMap class="md:w-1/3" :interactive="true" :lat="station.data.latitude" :lng="station.data.longitude"/>
     </div>
-    <pre>{{ station }}</pre>
+    <h2>Beschreibung</h2>
+    <editor-content :editor="editor"/>
+    <pre class="overflow-scroll" v-if="config.public.environment === 'development'">{{ station }}</pre>
   </ContentWrapper>
 </template>
