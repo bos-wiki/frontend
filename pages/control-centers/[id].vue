@@ -40,7 +40,16 @@ const controlCenter = await store.getControlCenter(route.params.id)
         </header>
       </div>
     </div>
-    <StationMap class="w-full h-[40vh] mb-32" :zoom="11.5" :interactive="true" :lat="controlCenter.latitude" :lng="controlCenter.longitude" />
+    <StationMap class="w-full h-[40vh] mb-12" :zoom="11.5" :interactive="true" :lat="controlCenter.latitude" :lng="controlCenter.longitude" />
+    <h2 class="text-xl font-bold mb-4">Wachen in dieser Leitstelle</h2>
+    <div v-if="controlCenter.stations" class="flex justify-between space-x-6 mb-32">
+      <template v-for="station in controlCenter.stations">
+        <NuxtLink :to="`/stations/${station.id}`" class="block p-4 border border-gray-300 rounded-lg w-full text-center hover:bg-red-500 hover:text-white text-gray-900">
+          <h3 class="leading-6">{{ station.name }}</h3>
+        </NuxtLink>
+      </template>
+      <p v-if="!controlCenter.stations">Keine Wachen verknüpft!</p>
+    </div>
     <pre class="overflow-scroll" v-if="config.public.environment === 'development'">{{controlCenter}}</pre>
   </ContentWrapper>
 </template>

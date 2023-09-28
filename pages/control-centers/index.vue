@@ -25,7 +25,7 @@ const updateSearch = (event) => {
 const filteredControlCenters = computed(() => {
   const searchTerm = actualSearch.value.trim().toLowerCase();
 
-  return store.controlCenters.flatMap((controlCenter) => {
+  return store.controlCenters?.flatMap((controlCenter) => {
     const matchingControlCenters = controlCenter.controlCenters.filter(station => {
       const stationName = station?.name?.toLowerCase() || "";
       return stationName.includes(searchTerm);
