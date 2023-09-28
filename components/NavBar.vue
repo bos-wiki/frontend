@@ -11,6 +11,7 @@ const navigationOpen = ref(false);
 const links = [
   {name: 'Start', path: '/', disabled: false},
   {name: 'Wachen', path: `/stations?page=1`, disabled: false},
+  {name: 'Leitstellen', path: `/control-centers`, disabled: false},
   {name: 'Community', path: `/discord`, disabled: false, external: true},
   // {name: 'Fahrzeuge', path: '/vehicles', disabled: true},
   // {name: 'Community', path: '/community', disabled: true},
