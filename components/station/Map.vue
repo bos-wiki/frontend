@@ -4,7 +4,8 @@ import useMap from "~/composables/useMap";
 const props = defineProps<{
   interactive?: boolean
   lat?: number
-  lng?: number
+  lng?: number,
+  zoom?: number
 }>()
 
 const { mapContainer, lat, lng } = useMap({
@@ -12,7 +13,7 @@ const { mapContainer, lat, lng } = useMap({
   attributionControl: false,
   lat: props.lat ?? 48.5797,
   lng: props.lng ?? 11.8000,
-  zoom: 13.5,
+  zoom: props.zoom ?? 13.5,
   maxZoom: 18
 });
 </script>
