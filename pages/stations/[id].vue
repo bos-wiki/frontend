@@ -139,11 +139,25 @@ const editor = useEditor({
             <p>{{ station.data.author?.username }}</p>
           </dd>
         </dl>
+        <div class="col-span-1 md:cols-span-2">
+          <h2>Beschreibung</h2>
+          <editor-content :editor="editor"/>
+        </div>
       </div>
-      <StationMap class="md:w-1/3" :interactive="true" :lat="station.data.latitude" :lng="station.data.longitude"/>
+      <aside class="md:w-1/3">
+        <StationMap class="" :interactive="true" :lat="station.data.latitude" :lng="station.data.longitude"/>
+        <h2 class="font-bold mt-2">Wachen in der Nähe</h2>
+        <template v-for="nearbyStation in station?.nearbyStations">
+          <ul class="text-sm flex flex-col space-x-4">
+            <li class="list-disc ml-4">
+              <NuxtLink :to="{name: 'stations-id', params: { id: nearbyStation?.id }}" class="block py-0.5 hover:text-red-400">
+                {{nearbyStation?.name}} (~{{(nearbyStation?.distanceInMeters / 1000).toFixed(1)}} km)
+              </NuxtLink>
+            </li>
+          </ul>
+        </template>
+      </aside>
     </div>
-    <h2>Beschreibung</h2>
-    <editor-content :editor="editor"/>
     <pre class="overflow-scroll" v-if="config.public.environment === 'development'">{{ station }}</pre>
   </ContentWrapper>
 </template>
