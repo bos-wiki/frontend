@@ -151,7 +151,7 @@ const editor = useEditor({
           <ul class="text-sm flex flex-col space-x-4">
             <li class="list-disc ml-4">
               <NuxtLink :to="{name: 'stations-id', params: { id: nearbyStation?.id }}" class="block py-0.5 hover:text-red-400">
-                {{nearbyStation?.name}} (~{{(nearbyStation?.distanceInMeters / 1000).toFixed(1)}} km)
+                {{nearbyStation?.name}} <span class="break-keep whitespace-nowrap">(~{{(nearbyStation?.distanceInMeters / 1000).toFixed(1)}} km)</span>
               </NuxtLink>
             </li>
           </ul>
