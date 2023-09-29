@@ -5,7 +5,8 @@ const props = defineProps<{
   interactive?: boolean
   lat?: number
   lng?: number,
-  zoom?: number
+  zoom?: number,
+  pickLocation?: boolean
 }>()
 
 const { mapContainer, lat, lng } = useMap({
@@ -14,7 +15,8 @@ const { mapContainer, lat, lng } = useMap({
   lat: props.lat ?? 48.5797,
   lng: props.lng ?? 11.8000,
   zoom: props.zoom ?? 13.5,
-  maxZoom: 18
+  maxZoom: 18,
+  pickLocation: props.pickLocation,
 });
 </script>
 

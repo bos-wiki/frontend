@@ -33,6 +33,7 @@ export default function useMap(
     attributionControl = true,
     maxZoom = 14.5,
     fitToBounds = false,
+    pickLocation = false,
   }: MapConfig
 ) {
   const config = useRuntimeConfig();
@@ -70,7 +71,7 @@ export default function useMap(
       }));
     }
 
-    if(interactive && showMarker) {
+    if(pickLocation && showMarker) {
       map.value.on('click', (event) => {
         marker.value.setLngLat([event.lngLat.lng, event.lngLat.lat]);
         lat.value = event.lngLat.lat;
