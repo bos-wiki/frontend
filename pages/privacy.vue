@@ -258,35 +258,47 @@
 
     <h2>Kontakt- und Anfragenverwaltung</h2>
 
-    <p>Bei der Kontaktaufnahme mit uns (z. B. per Post, Kontaktformular, E-Mail, Telefon oder via soziale Medien) sowie im
+    <p>Bei der Kontaktaufnahme mit uns (z. B. per Post, Kontaktformular, E-Mail, Telefon oder via soziale Medien) sowie
+      im
       Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden die Angaben der anfragenden Personen verarbeitet soweit
       dies zur Beantwortung der Kontaktanfragen und etwaiger angefragter Maßnahmen erforderlich ist.</p>
 
     <ul class="list-disc">
       <li>Verarbeitete Datenarten: Kontaktdaten (z. B. E-Mail, Telefonnummern); Inhaltsdaten (z. B. Eingaben in
         Onlineformularen); Nutzungsdaten (z. B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten); Meta-,
-        Kommunikations- und Verfahrensdaten (z. .B. IP-Adressen, Zeitangaben, Identifikationsnummern, Einwilligungsstatus).</li>
+        Kommunikations- und Verfahrensdaten (z. .B. IP-Adressen, Zeitangaben, Identifikationsnummern,
+        Einwilligungsstatus).
+      </li>
       <li>Betroffene Personen: Kommunikationspartner.</li>
-      <li>    Zwecke der Verarbeitung: Kontaktanfragen und Kommunikation; Verwaltung und Beantwortung von Anfragen; Feedback (z.
-        B. Sammeln von Feedback via Online-Formular). Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.</li>
-      <li>Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Vertragserfüllung und vorvertragliche
-        Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO).</li>
+      <li> Zwecke der Verarbeitung: Kontaktanfragen und Kommunikation; Verwaltung und Beantwortung von Anfragen;
+        Feedback (z.
+        B. Sammeln von Feedback via Online-Formular). Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
+      </li>
+      <li>Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Vertragserfüllung und
+        vorvertragliche
+        Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO).
+      </li>
     </ul>
     <p>Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</p>
 
     <ul class="list-disc">
-      <li>Kontaktformular: Wenn Nutzer über unser Kontaktformular, E-Mail oder andere Kommunikationswege mit uns in Kontakt
+      <li>Kontaktformular: Wenn Nutzer über unser Kontaktformular, E-Mail oder andere Kommunikationswege mit uns in
+        Kontakt
         treten, verarbeiten wir die uns in diesem Zusammenhang mitgeteilten Daten zur Bearbeitung des mitgeteilten
         Anliegens; Rechtsgrundlagen: Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO),
-        Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</li>
+        Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).
+      </li>
     </ul>
 
     <h2>Newsletter und elektronische Benachrichtigungen</h2>
 
     <p>Wir versenden Newsletter, E-Mails und weitere elektronische Benachrichtigungen (nachfolgend "Newsletter") nur mit
       der Einwilligung der Empfänger oder einer gesetzlichen Erlaubnis. Sofern im Rahmen einer Anmeldung zum Newsletter
-      dessen Inhalte konkret umschrieben werden, sind sie für die Einwilligung der Nutzer maßgeblich. Im Übrigen enthalten
-      unsere Newsletter Informationen zu unseren Leistungen und uns. Um sich zu unseren Newslettern anzumelden, reicht es grundsätzlich aus, wenn Sie Ihre E-Mail-Adresse angeben. Wir können Sie jedoch bitten, einen Namen, zwecks persönlicher Ansprache im Newsletter, oder weitere Angaben, sofern
+      dessen Inhalte konkret umschrieben werden, sind sie für die Einwilligung der Nutzer maßgeblich. Im Übrigen
+      enthalten
+      unsere Newsletter Informationen zu unseren Leistungen und uns. Um sich zu unseren Newslettern anzumelden, reicht
+      es grundsätzlich aus, wenn Sie Ihre E-Mail-Adresse angeben. Wir können Sie jedoch bitten, einen Namen, zwecks
+      persönlicher Ansprache im Newsletter, oder weitere Angaben, sofern
       diese für die Zwecke des Newsletters erforderlich sind, zu tätigen.</p>
 
     <p>Double-Opt-In-Verfahren: Die Anmeldung zu unserem Newsletter erfolgt grundsätzlich in einem sogenannten
@@ -301,7 +313,8 @@
       Grundlage unserer berechtigten Interessen speichern, bevor wir sie löschen, um eine ehemals gegebene Einwilligung
       nachweisen zu können. Die Verarbeitung dieser Daten wird auf den Zweck einer möglichen Abwehr von Ansprüchen
       beschränkt. Ein individueller Löschungsantrag ist jederzeit möglich, sofern zugleich das ehemalige Bestehen einer
-      Einwilligung bestätigt wird. Im Fall von Pflichten zur dauerhaften Beachtung von Widersprüchen behalten wir uns die
+      Einwilligung bestätigt wird. Im Fall von Pflichten zur dauerhaften Beachtung von Widersprüchen behalten wir uns
+      die
       Speicherung der E-Mail-Adresse alleine zu diesem Zweck in einer Sperrliste (sogenannte "Blocklist") vor.</p>
 
     <p>Die Protokollierung des Anmeldeverfahrens erfolgt auf Grundlage unserer berechtigten Interessen zu Zwecken des
@@ -313,31 +326,42 @@
     <p>Informationen zu uns, unseren Leistungen, Aktionen und Angeboten.</p>
 
     <ul class="list-disc">
-      <li>Verarbeitete Datenarten: Bestandsdaten (z. B. Namen, Adressen); Kontaktdaten (z. B. E-Mail, Telefonnummern); Meta-,
-        Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, Einwilligungsstatus);
-        Nutzungsdaten (z. .B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).</li>
+      <li>Verarbeitete Datenarten: Bestandsdaten (z. B. Namen, Adressen); Kontaktdaten (z. B. E-Mail, Telefonnummern);
+        Meta-,
+        Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern,
+        Einwilligungsstatus);
+        Nutzungsdaten (z. .B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).
+      </li>
       <li>Betroffene Personen: Kommunikationspartner.</li>
       <li>Zwecke der Verarbeitung: Direktmarketing (z. .B. per E-Mail oder postalisch).</li>
       <li>Rechtsgrundlagen: Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO).</li>
       <li>Widerspruchsmöglichkeit (Opt-Out): Sie können den Empfang unseres Newsletters jederzeit kündigen, d. .h. Ihre
-        Einwilligungen widerrufen, bzw. dem weiteren Empfang widersprechen. Einen Link zur Kündigung des Newsletters finden
+        Einwilligungen widerrufen, bzw. dem weiteren Empfang widersprechen. Einen Link zur Kündigung des Newsletters
+        finden
         Sie entweder am Ende eines jeden Newsletters oder können sonst eine der oben angegebenen Kontaktmöglichkeiten,
-        vorzugswürdig E-Mail, hierzu nutzen.</li>
+        vorzugswürdig E-Mail, hierzu nutzen.
+      </li>
     </ul>
 
     <p>Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</p>
 
     <ul class="list-disc">
-      <li>Messung von Öffnungs- und Klickraten: Die Newsletter enthalten einen sogenannte "web-beacon", d. h., eine pixelgroße
-        Datei, die beim Öffnen des Newsletters von unserem Server, bzw., sofern wir einen Versanddienstleister einsetzen,
+      <li>Messung von Öffnungs- und Klickraten: Die Newsletter enthalten einen sogenannte "web-beacon", d. h., eine
+        pixelgroße
+        Datei, die beim Öffnen des Newsletters von unserem Server, bzw., sofern wir einen Versanddienstleister
+        einsetzen,
         von dessen Server abgerufen wird. Im Rahmen dieses Abrufs werden zunächst technische Informationen, wie
         Informationen zum Browser und Ihrem System, als auch Ihre IP-Adresse und der Zeitpunkt des Abrufs, erhoben.
 
-        Diese Informationen werden zur technischen Verbesserung unseres Newsletters anhand der technischen Daten oder der
-        Zielgruppen und ihres Leseverhaltens auf Basis ihrer Abruforte (die mit Hilfe der IP-Adresse bestimmbar sind) oder
-        der Zugriffszeiten genutzt. Diese Analyse beinhaltet ebenfalls die Feststellung, ob die Newsletter geöffnet werden,
+        Diese Informationen werden zur technischen Verbesserung unseres Newsletters anhand der technischen Daten oder
+        der
+        Zielgruppen und ihres Leseverhaltens auf Basis ihrer Abruforte (die mit Hilfe der IP-Adresse bestimmbar sind)
+        oder
+        der Zugriffszeiten genutzt. Diese Analyse beinhaltet ebenfalls die Feststellung, ob die Newsletter geöffnet
+        werden,
         wann sie geöffnet werden und welche Links geklickt werden. Diese Informationen werden den einzelnen
-        Newsletterempfängern zugeordnet und in deren Profilen bis zu deren Löschung gespeichert. Die Auswertungen dienen uns
+        Newsletterempfängern zugeordnet und in deren Profilen bis zu deren Löschung gespeichert. Die Auswertungen dienen
+        uns
         dazu, die Lesegewohnheiten unserer Nutzer zu erkennen und unsere Inhalte an sie anzupassen oder unterschiedliche
         Inhalte entsprechend den Interessen unserer Nutzer zu versenden.
 
@@ -346,23 +370,18 @@
     </ul>
 
 
-
-
-
-
-
-
-
     <h2>Gewinnspiele und Wettbewerbe</h2>
 
     <p>Wir verarbeiten personenbezogene Daten der Teilnehmer von Gewinnspielen und Wettbewerben nur unter Einhaltung der
       einschlägigen Datenschutzbestimmungen, soweit die Verarbeitung zur Bereitstellung, Durchführung und Abwicklung des
       Gewinnspiels vertraglich erforderlich ist, die Teilnehmer in die Verarbeitung eingewilligt haben oder die
-      Verarbeitung unseren berechtigten Interessen dient (z. B. an der Sicherheit des Gewinnspiels oder dem Schutz unserer
+      Verarbeitung unseren berechtigten Interessen dient (z. B. an der Sicherheit des Gewinnspiels oder dem Schutz
+      unserer
       Interessen vor Missbrauch durch mögliche Erfassung von IP-Adressen bei Einreichung von Gewinnspielbeiträgen).
 
       Falls im Rahmen der Gewinnspiele Beiträge der Teilnehmer veröffentlicht werden (z. B. im Rahmen einer Abstimmung
-      oder Präsentation der Gewinnspielbeiträge bzw. der Gewinner oder der Berichterstattung zum Gewinnspiel), weisen wir
+      oder Präsentation der Gewinnspielbeiträge bzw. der Gewinner oder der Berichterstattung zum Gewinnspiel), weisen
+      wir
       darauf hin, dass die Namen der Teilnehmer in diesem Zusammenhang ebenfalls veröffentlicht werden können. Die
       Teilnehmer können dem jederzeit widersprechen.
 
@@ -373,23 +392,30 @@
       Gewinnspiel an uns zu richten sind.
 
       Die Daten der Teilnehmer werden gelöscht, sobald das Gewinnspiel oder der Wettbewerb beendet sind und die Daten
-      nicht mehr erforderlich sind, um die Gewinner zu informieren oder weil nicht mehr mit Rückfragen zum Gewinnspiel zu
-      rechnen ist. Grundsätzlich werden die Daten der Teilnehmer spätestens 6 Monate nach Ende des Gewinnspiels gelöscht.
+      nicht mehr erforderlich sind, um die Gewinner zu informieren oder weil nicht mehr mit Rückfragen zum Gewinnspiel
+      zu
+      rechnen ist. Grundsätzlich werden die Daten der Teilnehmer spätestens 6 Monate nach Ende des Gewinnspiels
+      gelöscht.
       Daten der Gewinner können länger einbehalten werden, um z. B. Rückfragen zu den Gewinnen beantworten oder die
-      Gewinnleistungen erfüllen zu können; in diesem Fall richtet sich die Aufbewahrungsdauer nach der Art des Gewinns und
+      Gewinnleistungen erfüllen zu können; in diesem Fall richtet sich die Aufbewahrungsdauer nach der Art des Gewinns
+      und
       beträgt z. B. bei Sachen oder Leistungen bis zu drei Jahre, um z. B. Gewährleistungsfälle bearbeiten zu können.
       Ferner können die Daten der Teilnehmer länger gespeichert werden, z. B. in Form der Berichterstattung zum
       Gewinnspiel in Online- und Offline-Medien.
 
-      Sofern Daten im Rahmen des Gewinnspiels auch zu anderen Zwecken erhoben wurden, richten sich deren Verarbeitung und
-      die Aufbewahrungsdauer nach den Datenschutzhinweisen zu dieser Nutzung (z. B. im Fall einer Anmeldung zum Newsletter
+      Sofern Daten im Rahmen des Gewinnspiels auch zu anderen Zwecken erhoben wurden, richten sich deren Verarbeitung
+      und
+      die Aufbewahrungsdauer nach den Datenschutzhinweisen zu dieser Nutzung (z. B. im Fall einer Anmeldung zum
+      Newsletter
       im Rahmen eines Gewinnspiels).
     </p>
 
     <ul class="list-disc">
-      <li>Verarbeitete Datenarten: Bestandsdaten (z. B. Namen, Adressen); Inhaltsdaten (z. B. Eingaben in Onlineformularen);
+      <li>Verarbeitete Datenarten: Bestandsdaten (z. B. Namen, Adressen); Inhaltsdaten (z. B. Eingaben in
+        Onlineformularen);
         Meta-, Kommunikations- und Verfahrensdaten (z. .B. IP-Adressen, Zeitangaben, Identifikationsnummern,
-        Einwilligungsstatus).</li>
+        Einwilligungsstatus).
+      </li>
       <li>Betroffene Personen: Gewinnspiel- und Wettbewerbsteilnehmer.</li>
       <li>Zwecke der Verarbeitung: Durchführung von Gewinnspielen und Wettbewerben.</li>
       <li>Rechtsgrundlagen: Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO).</li>
@@ -398,15 +424,19 @@
     <h2>Umfragen und Befragungen</h2>
 
     <p>Wir führen Umfragen und Befragungen durch, um Informationen für den jeweils kommunizierten Umfrage- bzw.
-      Befragungszweck, zu sammeln. Die von uns durchgeführten Umfragen und Befragungen (nachfolgend "Befragungen") werden
+      Befragungszweck, zu sammeln. Die von uns durchgeführten Umfragen und Befragungen (nachfolgend "Befragungen")
+      werden
       anonym ausgewertet. Eine Verarbeitung personenbezogener Daten erfolgt nur insoweit, als dies zu Bereitstellung und
-      technischen Durchführung der Umfragen erforderlich ist (z. B. Verarbeitung der IP-Adresse, um die Umfrage im Browser
+      technischen Durchführung der Umfragen erforderlich ist (z. B. Verarbeitung der IP-Adresse, um die Umfrage im
+      Browser
       des Nutzers darzustellen oder mithilfe eines Cookies eine Wiederaufnahme der Umfrage zu ermöglichen).</p>
 
     <ul class="list-disc">
       <li>Verarbeitete Datenarten: Kontaktdaten (z. B. E-Mail, Telefonnummern); Inhaltsdaten (z. B. Eingaben in
         Onlineformularen); Nutzungsdaten (z. B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten); Meta-,
-        Kommunikations- und Verfahrensdaten (z. .B. IP-Adressen, Zeitangaben, Identifikationsnummern, Einwilligungsstatus).</li>
+        Kommunikations- und Verfahrensdaten (z. .B. IP-Adressen, Zeitangaben, Identifikationsnummern,
+        Einwilligungsstatus).
+      </li>
       <li>Betroffene Personen: Kommunikationspartner. Teilnehmer.</li>
       <li>Zwecke der Verarbeitung: Feedback (z. .B. Sammeln von Feedback via Online-Formular).</li>
       <li>Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</li>
@@ -426,7 +456,8 @@
       verarbeitet. So können z. B. anhand des Nutzungsverhaltens und sich daraus ergebender Interessen der Nutzer
       Nutzungsprofile erstellt werden. Die Nutzungsprofile können wiederum verwendet werden, um z. B. Werbeanzeigen
       innerhalb und außerhalb der Netzwerke zu schalten, die mutmaßlich den Interessen der Nutzer entsprechen. Zu diesen
-      Zwecken werden im Regelfall Cookies auf den Rechnern der Nutzer gespeichert, in denen das Nutzungsverhalten und die
+      Zwecken werden im Regelfall Cookies auf den Rechnern der Nutzer gespeichert, in denen das Nutzungsverhalten und
+      die
       Interessen der Nutzer gespeichert werden. Ferner können in den Nutzungsprofilen auch Daten unabhängig der von den
       Nutzern verwendeten Geräte gespeichert werden (insbesondere, wenn die Nutzer Mitglieder der jeweiligen Plattformen
       sind und bei diesen eingeloggt sind).
@@ -436,45 +467,62 @@
 
       Auch im Fall von Auskunftsanfragen und der Geltendmachung von Betroffenenrechten weisen wir darauf hin, dass diese
       am effektivsten bei den Anbietern geltend gemacht werden können. Nur die Anbieter haben jeweils Zugriff auf die
-      Daten der Nutzer und können direkt entsprechende Maßnahmen ergreifen und Auskünfte geben. Sollten Sie dennoch Hilfe
+      Daten der Nutzer und können direkt entsprechende Maßnahmen ergreifen und Auskünfte geben. Sollten Sie dennoch
+      Hilfe
       benötigen, dann können Sie sich an uns wenden.
     </p>
 
     <ul class="list-disc">
       <li>Verarbeitete Datenarten: Kontaktdaten (z. B. E-Mail, Telefonnummern); Inhaltsdaten (z. B. Eingaben in
         Onlineformularen); Nutzungsdaten (z. B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten); Meta-,
-        Kommunikations- und Verfahrensdaten (z. .B. IP-Adressen, Zeitangaben, Identifikationsnummern, Einwilligungsstatus).</li>
+        Kommunikations- und Verfahrensdaten (z. .B. IP-Adressen, Zeitangaben, Identifikationsnummern,
+        Einwilligungsstatus).
+      </li>
       <li>Betroffene Personen: Nutzer (z. .B. Webseitenbesucher, Nutzer von Onlinediensten).</li>
       <li>Zwecke der Verarbeitung: Kontaktanfragen und Kommunikation; Feedback (z. B. Sammeln von Feedback via
-        Online-Formular). Marketing.</li>
+        Online-Formular). Marketing.
+      </li>
       <li>Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</li>
     </ul>
 
 
     <p>Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</p>
     <ul class="list-disc">
-      <li>Instagram: Soziales Netzwerk; Dienstanbieter: Meta Platforms Ireland Limited, 4 Grand Canal Square, Grand Canal
+      <li>Instagram: Soziales Netzwerk; Dienstanbieter: Meta Platforms Ireland Limited, 4 Grand Canal Square, Grand
+        Canal
         Harbour, Dublin 2, Irland; Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO); Website:
-        https://www.instagram.com. Datenschutzerklärung: https://instagram.com/about/legal/privacy.</li>
-      <li>Facebook-Seiten: Profile innerhalb des sozialen Netzwerks Facebook - Wir sind gemeinsam mit Meta Platforms Ireland
-        Limited für die Erhebung (jedoch nicht die weitere Verarbeitung) von Daten der Besucher unserer Facebook-Seite (sog.
-        "Fanpage") verantwortlich. Zu diesen Daten gehören Informationen zu den Arten von Inhalten, die Nutzer sich ansehen
+        https://www.instagram.com. Datenschutzerklärung: https://instagram.com/about/legal/privacy.
+      </li>
+      <li>Facebook-Seiten: Profile innerhalb des sozialen Netzwerks Facebook - Wir sind gemeinsam mit Meta Platforms
+        Ireland
+        Limited für die Erhebung (jedoch nicht die weitere Verarbeitung) von Daten der Besucher unserer Facebook-Seite
+        (sog.
+        "Fanpage") verantwortlich. Zu diesen Daten gehören Informationen zu den Arten von Inhalten, die Nutzer sich
+        ansehen
         oder mit denen sie interagieren, oder die von ihnen vorgenommenen Handlungen (siehe unter „Von dir und anderen
         getätigte und bereitgestellte Dinge" in der Facebook-Datenrichtlinie: https://www.facebook.com/policy), sowie
         Informationen über die von den Nutzern genutzten Geräte (z. B. IP-Adressen, Betriebssystem, Browsertyp,
         Spracheinstellungen, Cookie-Daten; siehe unter „Geräteinformationen" in der Facebook-Datenrichtlinie:
-        https://www.facebook.com/policy). Wie in der Facebook-Datenrichtlinie unter „Wie verwenden wir diese Informationen?"
-        erläutert, erhebt und verwendet Facebook Informationen auch, um Analysedienste, so genannte "Seiten-Insights", für
-        Seitenbetreiber bereitzustellen, damit diese Erkenntnisse darüber erhalten, wie Personen mit ihren Seiten und mit
-        den mit ihnen verbundenen Inhalten interagieren. Wir haben mit Facebook eine spezielle Vereinbarung abgeschlossen
+        https://www.facebook.com/policy). Wie in der Facebook-Datenrichtlinie unter „Wie verwenden wir diese
+        Informationen?"
+        erläutert, erhebt und verwendet Facebook Informationen auch, um Analysedienste, so genannte "Seiten-Insights",
+        für
+        Seitenbetreiber bereitzustellen, damit diese Erkenntnisse darüber erhalten, wie Personen mit ihren Seiten und
+        mit
+        den mit ihnen verbundenen Inhalten interagieren. Wir haben mit Facebook eine spezielle Vereinbarung
+        abgeschlossen
         ("Informationen zu Seiten-Insights", https://www.facebook.com/legal/terms/page_controller_addendum), in der
         insbesondere geregelt wird, welche Sicherheitsmaßnahmen Facebook beachten muss und in der Facebook sich bereit
-        erklärt hat die Betroffenenrechte zu erfüllen (d. h. Nutzer können z. B. Auskünfte oder Löschungsanfragen direkt an
+        erklärt hat die Betroffenenrechte zu erfüllen (d. h. Nutzer können z. B. Auskünfte oder Löschungsanfragen direkt
+        an
         Facebook richten). Die Rechte der Nutzer (insbesondere auf Auskunft, Löschung, Widerspruch und Beschwerde bei
-        zuständiger Aufsichtsbehörde), werden durch die Vereinbarungen mit Facebook nicht eingeschränkt. Weitere Hinweise
+        zuständiger Aufsichtsbehörde), werden durch die Vereinbarungen mit Facebook nicht eingeschränkt. Weitere
+        Hinweise
         finden sich in den "Informationen zu Seiten-Insights"
-        (https://www.facebook.com/legal/terms/information_about_page_insights_data); Dienstanbieter: Meta Platforms Ireland
-        Limited, Merrion Road, Dublin 4, D04 X2K5, Irland; Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit.
+        (https://www.facebook.com/legal/terms/information_about_page_insights_data); Dienstanbieter: Meta Platforms
+        Ireland
+        Limited, Merrion Road, Dublin 4, D04 X2K5, Irland; Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1
+        lit.
         f) DSGVO); Website: https://www.facebook.com; Datenschutzerklärung: https://www.facebook.com/about/privacy;
         Grundlage Drittlandübermittlung: EU-US Data Privacy Framework (DPF), Standardvertragsklauseln
         (https://www.facebook.com/legal/EU_data_transfer_addendum). Weitere Informationen: Vereinbarung gemeinsamer
@@ -482,11 +530,21 @@
         Verantwortlichkeit beschränkt sich auf die Erhebung durch und Übermittlung von Daten an Meta Platforms Ireland
         Limited, ein Unternehmen mit Sitz in der EU. Die weitere Verarbeitung der Daten liegt in der alleinigen
         Verantwortung von Meta Platforms Ireland Limited, was insbesondere die Übermittlung der Daten an die
-        Muttergesellschaft Meta Platforms, Inc. in den USA betrifft (auf der Grundlage der zwischen Meta Platforms Ireland
-        Limited und Meta Platforms, Inc. geschlossenen Standardvertragsklauseln).</li>
-      <li>X: Soziales Netzwerk; Dienstanbieter: Twitter International Company, One Cumberland Place, Fenian Street, Dublin 2
-        D02 AX07, Irland; Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Datenschutzerklärung:
-        https://twitter.com/privacy, (Settings: https://twitter.com/personalization).</li>
+        Muttergesellschaft Meta Platforms, Inc. in den USA betrifft (auf der Grundlage der zwischen Meta Platforms
+        Ireland
+        Limited und Meta Platforms, Inc. geschlossenen Standardvertragsklauseln).
+      </li>
+      <li>X: Soziales Netzwerk; Dienstanbieter: Twitter International Company, One Cumberland Place, Fenian Street,
+        Dublin 2
+        D02 AX07, Irland; Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).
+        Datenschutzerklärung:
+        https://twitter.com/privacy, (Settings: https://twitter.com/personalization).
+      </li>
+      <li>Discord: Soziales Netzwerk; Dienstanbieter: Discord Inc., 444 De Haro Street, San Francisco, CA 94107, United
+        States; Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Datenschutzerklärung:
+        https://discord.com/privacy, (Settings:
+        https://support.discord.com/hc/en-us/articles/360004109911-Data-Privacy-Controls).
+      </li>
     </ul>
 
     <h2>Änderung und Aktualisierung der Datenschutzerklärung</h2>
