@@ -15,36 +15,36 @@
         <p class="text-center text-xs leading-5 text-gray-500">&copy; 2023 bos.wiki. Alle Rechte vorbehalten.</p>
       </div>
     </ContentWrapper>
-    <ContentWrapper class="flex justify-between">
-      <div class="flex flex-col space-y-1 mt-6 mb-12">
+    <ContentWrapper class="flex flex-col md:flex-row md:justify-between pt-6 pb-12 space-y-4 md:space-y-0">
+      <div class="flex flex-col space-y-1">
         <h2 class="font-medium text-xs text-gray-500">Services</h2>
         <NuxtLink to="/stations">Wachen</NuxtLink>
         <NuxtLink to="/vehicles">Fahrzeuge</NuxtLink>
         <!--            <NuxtLink to="/">Einsätze</NuxtLink>-->
       </div>
-      <div class="flex flex-col space-y-1 mt-6 mb-12">
+      <div class="flex flex-col space-y-1">
         <h2 class="font-medium text-xs text-gray-500">Community</h2>
         <NuxtLink to="/blog">Blog</NuxtLink>
         <a href="/discord">Discord</a>
         <!--            <NuxtLink to="/">Forum</NuxtLink>-->
       </div>
-      <!--      <div class="flex flex-col space-y-1 mt-6 mb-12">-->
+      <!--      <div class="flex flex-col space-y-1">-->
       <!--        <h2 class="font-medium text-xs text-gray-500">Informationen</h2>-->
       <!--        <NuxtLink to="/">News</NuxtLink>-->
       <!--        <NuxtLink to="/">Über uns</NuxtLink>-->
       <!--        <NuxtLink to="/">Dokumentation</NuxtLink>-->
       <!--      </div>-->
-      <!--      <div class="flex flex-col space-y-1 mt-6 mb-12">-->
+      <!--      <div class="flex flex-col space-y-1">-->
       <!--        <h2 class="font-medium text-xs text-gray-500">Entwickler</h2>-->
       <!--        <NuxtLink to="/">Mitwirken</NuxtLink>-->
       <!--        <NuxtLink to="/">API</NuxtLink>-->
       <!--      </div>-->
-      <div class="flex flex-col space-y-1 mt-6 mb-12">
+      <div class="flex flex-col space-y-1">
         <h2 class="font-medium text-xs text-gray-500">Links</h2>
         <a href="https://leitstelle.io">Leitstelle.io</a>
         <a href="https://leitstellenspiel.de">Leitstellenspiel.de</a>
       </div>
-      <div class="flex flex-col space-y-1 mt-6 mb-12">
+      <div class="flex flex-col space-y-1">
         <h2 class="font-medium text-xs text-gray-500">Support</h2>
         <!--<NuxtLink to="/">Hilfe</NuxtLink>-->
         <!--<NuxtLink to="/">AGB</NuxtLink>-->
