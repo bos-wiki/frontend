@@ -138,6 +138,12 @@ const editor = useEditor({
             <p class="text-xs">Author</p>
             <p>{{ station.data.author?.username }}</p>
           </dd>
+          <dd v-if="station.data?.osmId">
+            <p class="text-xs">OpenStreetMap</p>
+            <a class="text-red-400" :href="`https://openstreetmap.org/${station.data.osmId}`" target="_blank" rel="nofollow">
+              {{ station.data?.osmId }}
+            </a>
+          </dd>
         </dl>
         <div class="col-span-1 md:cols-span-2">
           <h2>Beschreibung</h2>
