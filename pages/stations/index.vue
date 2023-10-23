@@ -2,7 +2,7 @@
 import {useStationStore} from "~/stores/useStationStore";
 const route = useRoute()
 
-const searchQuery = ref('')
+const searchQuery = ref(route.query.name ?? '')
 
 const store = useStationStore()
 store.fetchStations()
