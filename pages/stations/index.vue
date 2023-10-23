@@ -24,7 +24,7 @@ const searchStations = () => {
 <template>
   <ContentWrapper>
     <div class="flex space-x-4 my-8">
-      <input v-model="searchQuery" class="w-4/5 border border-gray-300" placeholder="Wachen Name" />
+      <input v-model="searchQuery" @keydown.enter="searchStations" class="w-4/5 border border-gray-300" placeholder="Wachen Name" />
       <button @click="searchStations" class="w-1/5 px-2 py-1 text-xs bg-red-500 hover:bg-red-600 text-white" >Suchen</button>
     </div>
     <List v-if="store?.stations" :stations="store.stations"/>
