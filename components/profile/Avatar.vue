@@ -5,6 +5,7 @@ const props = withDefaults(
   defineProps<{
     firstName: string;
     lastName: string;
+    name?: string;
     backgroundColor?: string;
   }>(),
   {
@@ -12,7 +13,24 @@ const props = withDefaults(
   }
 );
 
-const initials = computed(() => `${props.firstName[0]}${props.lastName[0]}`);
+const initials = computed(() => {
+  if (props.name) {
+    const nameParts = props.name.split(' ');
+    let first, second;
+
+    if (nameParts.length >= 3) {
+      first = nameParts[nameParts.length - 2];
+      second = nameParts[nameParts.length - 1];
+    } else {
+      [first, second] = nameParts;
+    }
+
+    return `${first ? first[0] : ''}${second ? second[0] : ''}`;
+  }
+
+  return `${props.firstName[0]}${props.lastName[0]}`;
+});
+
 </script>
 
 <template>

@@ -16,10 +16,11 @@ const props = defineProps({
     <template v-for="station in stations">
       <li class="relative flex justify-between gap-x-6 py-5">
         <div class="flex min-w-0 gap-x-4">
-          <img class="h-12 w-12 flex-none rounded-full bg-gray-50" :src="`https://ui-avatars.com/api/?rounded=true&size=256&name=${ station.name }`" alt="">
+          <ProfileAvatar class="h-12 w-12 flex-none rounded-full bg-gray-50" :name="station.name" />
+<!--          <img class="h-12 w-12 flex-none rounded-full bg-gray-50" :src="`https://ui-avatars.com/api/?rounded=true&size=256&name=${ station.name }`" alt="">-->
           <div class="min-w-0 flex-auto">
             <p class="text-sm font-semibold leading-6 text-gray-900">
-              <NuxtLink :to="`/stations/${station.id}`">
+              <NuxtLink :to="{ name: 'stations-id-info', params: { id: station.id }}">
                 <span class="absolute inset-x-0 -top-px bottom-0"></span>
                 {{ station.name }}
               </NuxtLink>
