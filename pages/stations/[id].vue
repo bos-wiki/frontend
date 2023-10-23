@@ -28,6 +28,14 @@ const editor = useEditor({
   editable: false,
   content: station.data.description,
 })
+
+const getDomainAndExtension = (url) => {
+  try {
+    return new URL(url).hostname.split('.').slice(-2).join('.');
+  } catch (error) {
+    return null;
+  }
+}
 </script>
 
 <template>
@@ -118,7 +126,11 @@ const editor = useEditor({
           </dd>
           <dd>
             <p class="text-xs">Website</p>
-            <p>{{ station.data.website || 'Unbekannt' }}</p>
+            <p></p>
+            <a v-if="getDomainAndExtension(station.data.website)" class="text-red-400 hover:text-red-700 cursor-pointer" :href="station.data.website" target="_blank" rel="nofollow">
+              {{ getDomainAndExtension(station.data.website) }}
+            </a>
+            <p v-else>Unbekannt</p>
           </dd>
           <dd>
             <p class="text-xs">Telefon</p>
@@ -140,7 +152,7 @@ const editor = useEditor({
           </dd>
           <dd v-if="station.data?.osmId">
             <p class="text-xs">OpenStreetMap</p>
-            <a class="text-red-400" :href="`https://openstreetmap.org/${station.data.osmId}`" target="_blank" rel="nofollow">
+            <a class="text-red-400 hover:text-red-700 cursor-pointer" :href="`https://openstreetmap.org/${station.data.osmId}`" target="_blank" rel="nofollow">
               {{ station.data?.osmId }}
             </a>
           </dd>
