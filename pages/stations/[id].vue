@@ -16,7 +16,9 @@ const getAddressString = (address) => {
 }
 
 onMounted(() => {
-  navigateTo({name: 'stations-id-info', params: {id: station.data.id}})
+  if (route.name === 'stations-id') {
+    navigateTo({name: 'stations-id-info', params: {id: station.data.id}})
+  }
 })
 </script>
 
