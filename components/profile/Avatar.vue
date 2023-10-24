@@ -3,8 +3,8 @@ import { defineProps, computed } from 'vue';
 
 const props = withDefaults(
   defineProps<{
-    firstName: string;
-    lastName: string;
+    firstName?: string;
+    lastName?: string;
     name?: string;
     backgroundColor?: string;
   }>(),
