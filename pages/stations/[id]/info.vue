@@ -96,7 +96,7 @@ const getDomainAndExtension = (url) => {
         <ul class="text-sm flex flex-col space-x-4">
           <li class="list-disc ml-4">
             <NuxtLink
-              :to="{name: 'stations-id', params: { id: nearbyStation?.id }}"
+              :to="{name: 'stations-id-info', params: { id: nearbyStation?.id }}"
               class="block py-0.5 hover:text-red-400"
             >
               {{ nearbyStation?.name }}
