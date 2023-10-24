@@ -14,6 +14,10 @@ const getAddressString = (address) => {
     ? `${address?.street} ${address?.number}, ${address?.zip} ${address?.city}`
     : 'Noch keine Adresse hinterlegt!'
 }
+
+onMounted(() => {
+  navigateTo({name: 'stations-id-info', params: {id: station.data.id}})
+})
 </script>
 
 <template>
