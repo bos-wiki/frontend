@@ -1,5 +1,6 @@
 <script setup>
 import {useControlCenterStore} from "~/stores/useControlCenterStore";
+import ControlCenterMap from "~/components/ControlCenterMap.vue";
 
 const store = useControlCenterStore()
 store.fetchControlCenters()
@@ -59,6 +60,8 @@ const filteredControlCenters = computed(() => {
         </div>-->
       </div>
     </div>
+
+    <ControlCenterMap class="mt-12" :interactive="true" :districts="store.controlCenters" v-if="store.controlCenters" />
 
     <template v-for="stateDistrict in filteredControlCenters">
       <section class="my-12">

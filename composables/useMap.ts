@@ -23,8 +23,8 @@ interface LatLng {
 
 export default function useMap(
   {
-    lat: initialLat = 48.57991370318851,
-    lng: initialLng = 11.79700206108356,
+    lat: initialLat = 0,
+    lng: initialLng = 0,
     zoom = 12.5,
     interactive = false,
     showMarker= true,
