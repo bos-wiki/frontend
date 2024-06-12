@@ -16,6 +16,7 @@
     "nuxt-svgo": "^3.5.3"
   },
   "dependencies": {
+    "@formbricks/js": "^2.1.0",
     "@pinia/nuxt": "^0.4.11",
     "@tiptap/extension-document": "^2.1.11",
     "@tiptap/extension-paragraph": "^2.1.11",
