@@ -32,12 +32,12 @@ const links = [
         <template v-for="link in links">
           <NuxtLink
             v-if="!link?.external"
-            active-class="bg-red-500 text-white"
+            active-class="!text-red-600"
             :class="{
               'cursor-not-allowed text-gray-300 line-through pointer-events-none': link.disabled,
-              'hover:text-white hover:bg-red-500': !link.disabled
+              'hover:text-red-400': !link.disabled
             }"
-            class="flex items-center text-md font-light tracking-wider text-gray-900 md:px-4 lg:px-8 py-0"
+            class="flex items-center text-md font-medium tracking-wider text-neutral-950 md:px-4 lg:px-8 py-0 rounded-md"
             :to="link.path"
             :disabled="link.disabled"
           >
@@ -47,9 +47,9 @@ const links = [
             v-if="link?.external"
             :class="{
               'cursor-not-allowed text-gray-300 line-through pointer-events-none': link.disabled,
-              'hover:text-white hover:bg-red-500': !link.disabled
+              'hover:text-red-500': !link.disabled
             }"
-            class="flex items-center text-md font-light tracking-wider text-gray-900 md:px-4 lg:px-8 py-0"
+            class="flex items-center text-md font-medium tracking-wider text-neutral-950 md:px-4 lg:px-8 py-0"
             :href="link.path"
             :disabled="link.disabled"
           >

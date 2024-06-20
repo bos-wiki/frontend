@@ -77,22 +77,22 @@ onMounted(() => {
               <span>Fahrzeuge</span>
             </NuxtLink>
             <a href="#"
-               class="opacity-25 line-through border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium">
+               class="line-through border-transparent text-gray-500/30 hover:border-gray-300 hover:text-gray-700/30 group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium">
               <IconsCamera class="w-6 h-6 mr-1"/>
               <span>Bilder</span>
             </a>
             <a href="#"
-               class="opacity-25 line-through border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium">
+               class="line-through border-transparent text-gray-500/30 hover:border-gray-300 hover:text-gray-700/30 group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium">
               <IconsMessages class="w-6 h-6 mr-1"/>
               <span>Diskussionen</span>
             </a>
             <a href="#"
-               class="opacity-25 line-through border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium">
+               class="line-through border-transparent text-gray-500/30 hover:border-gray-300 hover:text-gray-700/30 group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium">
               <IconsUsers class="w-6 h-6 mr-1"/>
               <span>Mitglieder</span>
             </a>
             <a href="#"
-               class="opacity-25 line-through border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium">
+               class="line-through border-transparent text-gray-500/30 hover:border-gray-300 hover:text-gray-700/30 group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium">
               <IconsHistory class="w-6 h-6 mr-1"/>
               <span>Verlauf</span>
             </a>

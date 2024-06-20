@@ -46,11 +46,11 @@ const getDomainAndExtension = (url) => {
     <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 grid-gap-8">
       <dl class="space-y-4">
         <dd>
-          <p class="text-xs">Wachen Art</p>
+          <p class="text-xs text-gray-500/30">Wachen Art</p>
           <p>{{ props.station.stationType.name || 'Unbekannt' }}</p>
         </dd>
         <dd>
-          <p class="text-xs">Website</p>
+          <p class="text-xs text-gray-500/30">Website</p>
           <p></p>
           <a v-if="getDomainAndExtension(props.station.website)" class="text-red-400 hover:text-red-700 cursor-pointer"
              :href="props.station.website" target="_blank" rel="nofollow">
@@ -59,25 +59,25 @@ const getDomainAndExtension = (url) => {
           <p v-else>Unbekannt</p>
         </dd>
         <dd>
-          <p class="text-xs">Telefon</p>
+          <p class="text-xs text-gray-500/30">Telefon</p>
           <p>{{ props.station.phone || 'Unbekannt' }}</p>
         </dd>
       </dl>
       <dl class="space-y-4">
         <dd>
-          <p class="text-xs">Leitstelle</p>
+          <p class="text-xs text-gray-500/30">Leitstelle</p>
           <p>{{ props.station.controlCenter.name }}</p>
         </dd>
         <dd>
-          <p class="text-xs">Erstellt</p>
+          <p class="text-xs text-gray-500/30">Erstellt</p>
           <p>{{ props.station.createdAt }}</p>
         </dd>
         <dd>
-          <p class="text-xs">Author</p>
+          <p class="text-xs text-gray-500/30">Author</p>
           <p>{{ props.station.author?.username }}</p>
         </dd>
         <dd v-if="props.station?.osmId">
-          <p class="text-xs">OpenStreetMap</p>
+          <p class="text-xs text-gray-500/30">OpenStreetMap</p>
           <a class="text-red-400 hover:text-red-700 cursor-pointer"
              :href="`https://openstreetmap.org/${props.station.osmId}`" target="_blank" rel="nofollow">
             {{ props.station?.osmId }}
