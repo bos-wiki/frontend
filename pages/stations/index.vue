@@ -49,7 +49,7 @@ watch(() => route.query, (newQuery) => {
     </div>
 
     <div class="md:flex md:flex-row-reverse gap-x-6">
-      <StationMap class="w-full md:w-1/2 md:h-[calc(100vh-300px)]" :interactive="true" :markers="store.stations"/>
+      <StationOverviewMap class="w-full md:w-1/2 md:h-[calc(100vh-300px)]" :interactive="true" :markers="store.stations"/>
       <List v-if="store?.stations?.length" class="w-full md:w-1/2 md:h-[calc(100vh-300px)] overflow-y-scroll" :stations="store.stations"/>
       <template v-if="!store?.stations?.length && route.query.name">
         <div class="text-center py-56 w-1/2">

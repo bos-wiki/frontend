@@ -87,20 +87,21 @@ export default function useMap(
   });
 
   const addMarkersFromStations = (stations) => {
-    return stations.map(({location, name}) => ({
-        lat: location?.coordinates[1] ?? null,
-        lng: location?.coordinates[0] ?? null,
-        title: name
-      })
+    addMarkers(
+      stations.map(({location, name}) => ({
+          lat: location?.coordinates[1] ?? null,
+          lng: location?.coordinates[0] ?? null,
+          title: name
+        })
+      )
     )
   }
 
   const addMarkers = (coordinates: LatLng[]) => {
-    const markers = addMarkersFromStations(coordinates)
     additionalMarkers.value.forEach(marker => marker.remove())
     additionalMarkers.value = []
 
-    markers.forEach(coord => {
+    coordinates.forEach(coord => {
       const newMarker = new Marker({
         color: markerColor,
         draggable: markerDraggable
@@ -136,6 +137,7 @@ export default function useMap(
     mapContainer,
     lat,
     lng,
-    addMarkers
+    addMarkers,
+    addMarkersFromStations
   }
 }

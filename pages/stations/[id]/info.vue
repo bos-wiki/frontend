@@ -90,7 +90,7 @@ const getDomainAndExtension = (url) => {
       </div>
     </div>
     <aside class="md:w-1/3">
-      <StationMap class="" :interactive="true" :lat="props.station.latitude" :lng="props.station.longitude"/>
+      <StationMap class="" :interactive="true" :lat="props.station.latitude" :lng="props.station.longitude" :show-marker="true"/>
       <h2 class="font-bold mt-2">Wachen in der Nähe</h2>
       <template v-for="nearbyStation in props.nearby">
         <ul class="text-sm flex flex-col space-x-4">
