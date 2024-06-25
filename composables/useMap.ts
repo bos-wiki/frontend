@@ -87,14 +87,11 @@ export default function useMap(
   });
 
   const addMarkersFromStations = (stations) => {
-    return stations.map(station => {
-        console.log(station)
-        return {
-          title: station.name,
-          lat: station?.location?.coordinates[1] ?? null,
-          lng: station?.location?.coordinates[0] ?? null
-        }
-      }
+    return stations.map(({location, name}) => ({
+        lat: location?.coordinates[1] ?? null,
+        lng: location?.coordinates[0] ?? null,
+        title: name
+      })
     )
   }
 
