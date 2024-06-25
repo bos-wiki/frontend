@@ -27,7 +27,7 @@ export default function useMap(
     lng: initialLng = 0,
     zoom = 12.5,
     interactive = false,
-    showMarker= true,
+    showMarker = true,
     markerColor = "#FF0000",
     markerDraggable = false,
     attributionControl = true,
@@ -71,7 +71,7 @@ export default function useMap(
       }));
     }
 
-    if(pickLocation && showMarker) {
+    if (pickLocation && showMarker) {
       map.value.on('click', (event) => {
         marker.value.setLngLat([event.lngLat.lng, event.lngLat.lat]);
         lat.value = event.lngLat.lat;
@@ -86,8 +86,21 @@ export default function useMap(
     }
   });
 
+  const addMarkersFromStations = (stations) => {
+    return stations.map(station => ({
+        title: station.name,
+        lat: station.location.coordinates[1],
+        lng: station.location.coordinates[0]
+      })
+    )
+  }
+
   const addMarkers = (coordinates: LatLng[]) => {
-    coordinates.forEach(coord => {
+    const markers = addMarkersFromStations(coordinates)
+    additionalMarkers.value.forEach(marker => marker.remove())
+    additionalMarkers.value = []
+
+    markers.forEach(coord => {
       const newMarker = new Marker({
         color: markerColor,
         draggable: markerDraggable
@@ -103,13 +116,15 @@ export default function useMap(
     });
 
     if (fitToBounds && additionalMarkers.value.length > 0 && map.value) {
-      const bounds = new LngLatBounds();
+      setTimeout(() => {
+        const bounds = new LngLatBounds();
 
-      additionalMarkers.value.forEach(marker => {
-        bounds.extend(marker.getLngLat() as LngLatLike);
-      });
+        additionalMarkers.value.forEach(marker => {
+          bounds.extend(marker.getLngLat() as LngLatLike);
+        });
 
-      map.value.fitBounds(bounds, {padding: 50});
+        map.value.fitBounds(bounds, {padding: 50})
+      }, 200)
     }
   }
 

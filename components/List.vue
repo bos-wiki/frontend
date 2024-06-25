@@ -13,7 +13,7 @@ const props = defineProps({
 
 <template>
   <ul role="list" class="divide-y divide-gray-100">
-    <template v-for="station in stations">
+    <template v-for="station in props.stations" :key="station.id">
       <li class="relative flex justify-between gap-x-6 py-5">
         <div class="flex min-w-0 gap-x-4">
           <ProfileAvatar class="h-12 w-12 flex-none rounded-full bg-gray-50" :name="station.name" />

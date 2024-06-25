@@ -6,18 +6,37 @@ const props = defineProps<{
   lat?: number
   lng?: number,
   zoom?: number,
-  pickLocation?: boolean
+  pickLocation?: boolean,
+  markers?: any
 }>()
 
-const { mapContainer, lat, lng } = useMap({
+const { addMarkers, mapContainer, lat, lng } = useMap({
   interactive: props.interactive,
   attributionControl: false,
-  lat: props.lat ?? 48.5797,
-  lng: props.lng ?? 11.8000,
+  lat: 51.163361,
+  lng: 10.447683,
   zoom: props.zoom ?? 13.5,
   maxZoom: 18,
   pickLocation: props.pickLocation,
+  fitToBounds: true,
+  showMarker: false
 });
+
+
+onMounted(() => {
+  if (props.markers && process.client) {
+    addMarkers(props.markers)
+  }
+})
+
+watch(
+    () => props.markers,
+    ()=>{
+      if (props.markers && process.client) {
+        addMarkers(props.markers)
+      }
+    }
+)
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: {enabled: true},
   css: ['~/assets/css/main.css', 'maplibre-gl/dist/maplibre-gl.css'],
   runtimeConfig: {
     public: {
@@ -12,8 +12,8 @@ export default defineNuxtConfig({
     }
   },
   routeRules: {
-    '/profile': { ssr: false },
-    '/dashboard': { ssr: false }
+    '/profile': {ssr: false},
+    '/dashboard': {ssr: false}
   },
   modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', 'nuxt-svgo'],
   vite: {
@@ -45,5 +45,8 @@ export default defineNuxtConfig({
         },
       ]
     }
-  }
+  },
+  plugins: [
+    '~/plugins/scrollToTop.client.ts',
+  ]
 })
