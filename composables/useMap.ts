@@ -124,7 +124,7 @@ export default function useMap(
           bounds.extend(marker.getLngLat() as LngLatLike);
         });
 
-        map.value.fitBounds(bounds, {padding: 50})
+        map.value.fitBounds(bounds, {padding: 50, duration: 3500})
       }, 200)
     }
   }
